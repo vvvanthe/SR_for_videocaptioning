@@ -59,7 +59,7 @@ def plot_image(image, title=""):
   plt.show()
 
 hr_image = preprocess_image(IMAGE_PATH)
-
+print(hr_image.shape)
 model = hub.load(SAVED_MODEL_PATH)
 fake_image = model(hr_image)
 
